@@ -1,3 +1,29 @@
+// Решето Эрастофена
+/*
+let sievOfErastofen = [];
+let max = prompt('Введите максимальную величину решета...', 0);
+
+function isPrimary (number){
+	if(!number){
+		return false
+	}
+	
+	let primaryNumbers = [2, 3, 5, 7, 9]
+ 	return primaryNumbers.includes(number)
+}
+
+outer: for (i = 2; i < max; i++) {
+	if (isPrimary(i)) {
+	sievOfErastofen.push(i)
+		 continue;
+	}
+    if (i % 2 == 0 || i % 3 == 0 || i % 5 == 0 || i % 7 == 0 || i % 9 == 0) {
+        
+    } else sievOfErastofen.push(i)
+  }
+
+console.log(sievOfErastofen)*/
+
 // Фильтр диапозона
 /*
 let range = [];
