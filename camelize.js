@@ -1,17 +1,36 @@
-let text = '';
+// Кэмелкейс написание
 
-function camelize(str) {
-    let array = str.split('-')
-    for (i = 0; i < array.length; i++) {
-    if (i == 0) { 
-        break;
-    } let text += string[key].charAt(0).toUpperCase()+ string[key].charAt(1)
-    }
-    return text
+function rest(word) {
+    const [first, ... rest] = word.split('')
+    return rest.join ('')
+    
 }
 
-camelize("background-color");
-// camelize("list-style-image");
-// camelize("-webkit-transition");
+function capitalize(char) {
+    let result = '';
+    result = char.toUpperCase()
+    return result
+}
 
-alert(text);
+function camelize(str) {
+    let arrayCopy = separate(str);
+    let index = 0;
+    if (arrayCopy == "") {index += 1}
+    let camelCase = arrayCopy[index];
+    for (i = 1; i < (arrayCopy.length); i += 1) {
+    camelCase += capitalize(arrayCopy[i].charAt(0)) + rest(arrayCopy[i])
+    
+    } return camelCase
+} 
+
+function separate(phrase) {
+    let array = phrase.split('-')
+    return array
+}
+
+
+// const camelCase = camelize("background-color");
+const camelCase = camelize("list-style-image");
+// const camelCase = camelize("-webkit-transition");
+
+console.log(camelCase);
