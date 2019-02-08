@@ -1,3 +1,5 @@
+// Удаление класса
+
 let obj = {
     className: 'open menu'
 };
@@ -5,29 +7,16 @@ let obj = {
 let target = obj.className.split(' ');
 let preliminary = [];
 
-function isProp(prop) {
-    if (target.includes(prop)) {
-        return true
-        } return false;
-};
-
-
-
-function addClass(obj, cls) {
-    if (isProp(cls)) {
-      return obj.className  
-    } return obj.className = obj.className + ' ' + cls
-};
-
 function removeClass (obj, cls) {
     for (i = 0; i < target.length; i += 1) {
-       if (isProp(cls)) {
-       preliminary    
+       if (target[i] == cls) {
+       preliminary = target.splice(i, 1)
     }
     }
-    
+   return preliminary 
 }
 
 
-removeClass(obj, 'open');
+// removeClass(obj, 'open');
 removeClass(obj, 'blabla');
+console.log(target);
