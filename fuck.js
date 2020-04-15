@@ -1,5 +1,3 @@
-const fuck = "Fuck this worlk";
-
 var string = "total";
 console.log(string);
 console.log(9/0);
