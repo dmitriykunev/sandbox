@@ -13,11 +13,7 @@ let persone = {
 
 console.log(persone.isMarried);
 
- // -to string
- // 1) способ
-
- console.log(typeof(string(4)));
 
  // 2) способ
 
- console.log(typeof("" + false));
+ console.log(typeof("q" + 4));
