@@ -1,6 +1,7 @@
 let arr = [1, 2, 3, 4, 5];
 let newArr = [];
 
+
 function getSums(arr) {
   let result = arr.reduce(function(sum, current) {
     newArr.push(result)
