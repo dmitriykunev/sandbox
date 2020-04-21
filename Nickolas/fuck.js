@@ -8,7 +8,6 @@ let persone = {
     name: "Nici",
     age: 43,
     isMarried: false
-
 }
 // динамическая типязация
 
