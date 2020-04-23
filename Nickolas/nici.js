@@ -5,8 +5,8 @@ console.log(arr[0]);
 //alert("hello world!");
 //let answer = confirm("are you here?");
 //console.log(answer);
-//let answer = +prompt("есть ли вам 18?" , 'да');
-//console.log(typeof(answer));
+let answer = +prompt("есть ли вам 18?" , 'да');
+console.log(typeof(answer));
 //console.log(arr[0] + "- obgect");
 //console.log(4 + "- obgect");
 let incr = 10,
