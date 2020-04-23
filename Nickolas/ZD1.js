@@ -24,6 +24,6 @@ let appData = {
 
 }
 
-console.log(appData.expenses.oneQuestions);
+console.log(appData.expenses.oneQuestions);  // проверка в консоле записываются ли данные пользователя в обьект при вводе
 console.log(appData.expenses.twoQuestions);
 alert(appData.budget / 30);
