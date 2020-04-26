@@ -1,12 +1,14 @@
-'use strikt';
+// тут неправильно написал команду 'use strikt';
+'use strict';
+
 let money = prompt('Ваш бюджет на месяц?', '');
 console.log (money);
 
-    time = prompt('Введите дату в формате YYYY-MM-DD', '');
+let time = prompt('Введите дату в формате YYYY-MM-DD', ''); // почему здесь пропустил let?
 console.log (time);
 
 let oneQuestions = prompt("Введите обязательную статью расходов в этом месяце", ""),
-    twoQuestions = prompt("Во сколько обойдется?", ""),
+    twoQuestions = prompt("Во сколько обойдется?", ""), 
     threeQuestions = prompt("Введите обязательную статью расходов в этом месяце", ""),
     fourQuestions = prompt("Во сколько обойдется?", "");
 
@@ -14,7 +16,7 @@ let appData = {
     budget: money,
     timeData: time,
     expenses: {
-        oneQuestions: threeQuestions,
+        oneQuestions: threeQuestions, //тут какая то байда, в объекте ключ: значение
         twoQuestions: fourQuestions
     },
     optionalExpeses: {},
